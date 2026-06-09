@@ -236,7 +236,7 @@ const agroDB = {
                 nome: "Cupins subterrâneos (Heterotermes tenuis)",
                 desc: "Atacam os toletes no plantio, consomem raízes e destroem a base dos colmos. Causam falhas na brotação.",
                 imgBug: "assets/cupim_sub.webp",
-                imgDamage: "cupim_sub_dano.webp"
+                imgDamage: "cupim_sub_dano1.webp"
             }
         ]
     },
@@ -254,20 +254,20 @@ const agroDB = {
             {
                 nome: "Broca-do-café (Hypothenemus hampei)",
                 desc: "Praga-chave. Besouro fêmea perfura o fruto e abre galerias na semente. Deprecia fortemente o valor comercial da bebida.",
-                imgBug: "https://placehold.co/600x400/1a0f08/a1887f?text=Foto:+Broca-do-Cafe\n(Hypothenemus+hampei)",
-                imgDamage: "https://placehold.co/600x400/1a0800/ff9800?text=Dano:+Graos+Perfurados\n(Galeria+na+Semente+-+Deprecia+Bebida)"
+                imgBug: "assets/broca_cafe.webp",
+                imgDamage: "assets/broca_cafe_dano.webp"
             },
             {
                 nome: "Bicho-mineiro (Leucoptera coffeella)",
                 desc: "A lagarta penetra nas folhas e consome o tecido, criando minas esbranquiçadas. Causa queda precoce das folhas.",
-                imgBug: "https://placehold.co/600x400/1a0f08/a1887f?text=Foto:+Bicho-Mineiro\n(Leucoptera+coffeella)",
-                imgDamage: "https://placehold.co/600x400/0f1a08/cddc39?text=Dano:+Minas+Esbranquicadas\n(Queda+Precoce+das+Folhas)"
+                imgBug: "assets/bicho_mineiro.webp",
+                imgDamage: "assets/bicho_mineiro_dano.webp"
             },
             {
                 nome: "Nematoides (Meloidogyne spp.)",
                 desc: "Vermes microscópicos que atacam o sistema radicular. Formam galhas, causando amarelamento e plantas atrofiadas.",
-                imgBug: "https://placehold.co/600x400/1a0f08/a1887f?text=Foto:+Nematoides\n(Meloidogyne+spp.)",
-                imgDamage: "https://placehold.co/600x400/1a1000/ffc107?text=Dano:+Galhas+nas+Raizes\n(Amarelamento+e+Atrofia)"
+                imgBug: "assets/nematoide_1.webp",
+                imgDamage: "assets/nematoide_dano.webp"
             },
             {
                 nome: "Cigarras (Quesada gigas)",
