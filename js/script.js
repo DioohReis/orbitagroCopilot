@@ -218,7 +218,7 @@ const agroDB = {
                 nome: "Cigarrinha-das-raízes (Mahanarva fimbriolata)",
                 desc: "Ninfas sugam raízes, adultos atacam folhas. Injetam toxinas que causam amarelecimento e queima da planta.",
                 imgBug: "assets/cigarrinha_das_raizes.webp",
-                imgDamage: "cigarrinha_raizes_dano.webp"
+                imgDamage: "assets/cigarrinha_raizes_dano.webp"
             },
             {
                 nome: "Bicudo-da-cana (Sphenophorus levis)",
@@ -297,14 +297,14 @@ const agroDB = {
             {
                 nome: "Bicudo-do-algodoeiro (Anthonomus grandis)",
                 desc: "Inimigo nº1. Ataca botões florais e maçãs, causando queda ou má formação. Alto poder de destruição.",
-                imgBug: "https://placehold.co/600x400/0f1a12/80cbc4?text=Foto:+Bicudo-do-Algodoeiro\n(Anthonomus+grandis)",
-                imgDamage: "https://placehold.co/600x400/1a0800/ff9800?text=Dano:+Botoes+Florais+Caidos\n(Maca+Perfurada+e+Abortada)"
+                imgBug: "assets/bicudo_1.webp",
+                imgDamage: "assets/bicudo1_dano.webp"
             },
             {
                 nome: "Mosca-branca (Bemisia tabaci)",
                 desc: "Suga a seiva, transmite viroses e expele honeydew, favorecendo a fumagina que deprecia a pluma.",
-                imgBug: "https://placehold.co/600x400/0f1a12/80cbc4?text=Foto:+Mosca-Branca\n(Bemisia+tabaci)",
-                imgDamage: "https://placehold.co/600x400/111111/e0e0e0?text=Dano:+Fumagina+na+Pluma\n(Viroses+e+Perda+de+Qualidade)"
+                imgBug: "assets/moscabranca_2.webp",
+                imgDamage: "assets/moscabranca2_dano.webp"
             },
             {
                 nome: "Pulgão-do-algodoeiro (Aphis gossypii)",
