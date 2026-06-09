@@ -91,66 +91,66 @@ const agroDB = {
         lon: -55.90, 
         local: "Lucas do Rio Verde - MT",
         laudoSatelite: "O NDVI deve mostrar grandes áreas em verde intenso (> 0.7). Manchas amareladas indicam possível falha de plantio.",
-        pragas: [ 
-            { 
-                nome: "Lagarta-elasmo (Elasmopalpus lignosellus)", 
-                desc: "Conhecida como broca-do-colo. Penetra na haste das plântulas, podendo causar a morte da planta.", 
-                imgBug: "assets/lagarta-elasmo.jpg", 
-                imgDamage: "assets/soja_morta.jpg" 
+        pragas: [
+            {
+                nome: "Lagarta-elasmo (Elasmopalpus lignosellus)",
+                desc: "Conhecida como broca-do-colo. Penetra na haste das plântulas, podendo causar a morte da planta.",
+                imgBug: "assets/lagarta-elasmo.jpg",
+                imgDamage: "https://placehold.co/600x400/0a0f06/8bc34a?text=Dano:+Morte+da+Plantula\n(Broca+no+Colo)"
             },
-            { 
-                nome: "Corós (Diloboderus abderus)", 
-                desc: "Larvas que vivem no solo e atacam o sistema radicular e as sementes, gerando reboleiras com falhas de estande.", 
-                imgBug: "assets/larva_coros.jpg", 
-                imgDamage: "assets/soja_morta.jpg" 
+            {
+                nome: "Corós (Diloboderus abderus)",
+                desc: "Larvas que vivem no solo e atacam o sistema radicular e as sementes, gerando reboleiras com falhas de estande.",
+                imgBug: "assets/larva_coros.jpg",
+                imgDamage: "https://placehold.co/600x400/0a0f06/8bc34a?text=Dano:+Falhas+de+Estande\n(Raizes+Destruidas)"
             },
-            { 
-                nome: "Lagarta-rosca (Agrotis ipsilon)", 
-                desc: "Corta as plantas jovens rente ao solo, causando tombamento e falhas na germinação.", 
-                imgBug: "assets/lagarta_rosca.png", 
-                imgDamage: "assets/soja_morta.jpg" 
+            {
+                nome: "Lagarta-rosca (Agrotis ipsilon)",
+                desc: "Corta as plantas jovens rente ao solo, causando tombamento e falhas na germinação.",
+                imgBug: "assets/lagarta_rosca.png",
+                imgDamage: "https://placehold.co/600x400/0a0f06/8bc34a?text=Dano:+Tombamento\n(Caule+Cortado+no+Solo)"
             },
-            { 
-                nome: "Lagarta-da-soja (Anticarsia gemmatalis)", 
-                desc: "A mais clássica desfolhadora, tem coloração esverdeada e listras brancas. Alimenta-se vorazmente das folhas.", 
-                imgBug: "assets/lagarta-da-soja.png", 
-                imgDamage: "assets/soja_morta.jpg" 
+            {
+                nome: "Lagarta-da-soja (Anticarsia gemmatalis)",
+                desc: "A mais clássica desfolhadora, tem coloração esverdeada e listras brancas. Alimenta-se vorazmente das folhas.",
+                imgBug: "assets/lagarta-da-soja.png",
+                imgDamage: "https://placehold.co/600x400/0a0f06/8bc34a?text=Dano:+Desfolha+Total\n(Folhas+Consumidas)"
             },
-            { 
-                nome: "Falsa-medideira (Chrysodeixis includens)", 
-                desc: "As lagartas movem-se curvando o corpo e consomem o limbo foliar. São de controle mais difícil e causam grandes prejuízos.", 
-                imgBug: "assets/falsa-medideira.jpg", 
-                imgDamage: "assets/soja_morta.jpg" 
+            {
+                nome: "Falsa-medideira (Chrysodeixis includens)",
+                desc: "As lagartas movem-se curvando o corpo e consomem o limbo foliar. São de controle mais difícil e causam grandes prejuízos.",
+                imgBug: "assets/falsa-medideira.jpg",
+                imgDamage: "https://placehold.co/600x400/0a0f06/cddc39?text=Dano:+Limbo+Foliar+Consumido\n(Nervuras+Intactas)"
             },
-            { 
-                nome: "Complexo Spodoptera", 
-                desc: "Atacam desde folhas até flores e vagens, apresentando resistência a algumas tecnologias Bt.", 
-                imgBug: "assets/Complexo-Spodoptera.jpg", 
-                imgDamage: "assets/soja_morta.jpg" 
+            {
+                nome: "Complexo Spodoptera",
+                desc: "Atacam desde folhas até flores e vagens, apresentando resistência a algumas tecnologias Bt.",
+                imgBug: "assets/Complexo-Spodoptera.jpg",
+                imgDamage: "https://placehold.co/600x400/1a0800/ff9800?text=Dano:+Desfolha+e+Vagens+Atacadas\n(Resistente+a+Bt)"
             },
-            { 
-                nome: "Helicoverpa (Helicoverpa armigera)", 
-                desc: "Altamente polífaga e destrutiva, consome folhas, brotos, flores e perfura vagens.", 
-                imgBug: "assets/Helicoverpa.jpg", 
-                imgDamage: "assets/soja_morta.jpg" 
+            {
+                nome: "Helicoverpa (Helicoverpa armigera)",
+                desc: "Altamente polífaga e destrutiva, consome folhas, brotos, flores e perfura vagens.",
+                imgBug: "assets/Helicoverpa.jpg",
+                imgDamage: "https://placehold.co/600x400/1a0000/f44336?text=Dano:+Vagens+Perfuradas\n(Flores+e+Brotos+Consumidos)"
             },
-            { 
-                nome: "Complexo de Percevejos", 
-                desc: "Inserem seus estiletes nos grãos em formação, causando abortamento, grãos chochos, manchas (soja picada) e retenção foliar.", 
-                imgBug: "assets/Complexo-Percevejos-soja.webp", 
-                imgDamage: "assets/soja_morta.jpg" 
+            {
+                nome: "Complexo de Percevejos",
+                desc: "Inserem seus estiletes nos grãos em formação, causando abortamento, grãos chochos, manchas (soja picada) e retenção foliar.",
+                imgBug: "assets/Complexo-Percevejos-soja.webp",
+                imgDamage: "https://placehold.co/600x400/1a1400/ffc107?text=Dano:+Graos+Chochos+e+Manchados\n(Soja+Picada)"
             },
-            { 
-                nome: "Mosca-branca (Bemisia tabaci)", 
-                desc: "Suga a seiva da planta e expele substância que favorece a fumagina, prejudicando a fotossíntese, além de transmitir viroses.", 
-                imgBug: "assets/mosca-branca.jpg", 
-                imgDamage: "assets/soja_morta.jpg" 
+            {
+                nome: "Mosca-branca (Bemisia tabaci)",
+                desc: "Suga a seiva da planta e expele substância que favorece a fumagina, prejudicando a fotossíntese, além de transmitir viroses.",
+                imgBug: "assets/mosca-branca.jpg",
+                imgDamage: "https://placehold.co/600x400/111111/e0e0e0?text=Dano:+Fumagina+nas+Folhas\n(Viroses+e+Amarelamento)"
             },
-            { 
-                nome: "Ácaros (Tetranychus urticae)", 
-                desc: "Atacam a parte inferior das folhas causando amarelamento e teias, especialmente em períodos de seca prolongada.", 
-                imgBug: "assets/acaros-soja.jpg", 
-                imgDamage: "assets/soja_morta.jpg" 
+            {
+                nome: "Ácaros (Tetranychus urticae)",
+                desc: "Atacam a parte inferior das folhas causando amarelamento e teias, especialmente em períodos de seca prolongada.",
+                imgBug: "assets/acaros-soja.jpg",
+                imgDamage: "https://placehold.co/600x400/1a1a00/ffeb3b?text=Dano:+Amarelamento+e+Teias\n(Face+Inferior+das+Folhas)"
             }
         ]
     },
@@ -164,36 +164,36 @@ const agroDB = {
         lon: -50.92, 
         local: "Rio Verde - GO",
         laudoSatelite: "O verde uniforme garante boa taxa fotossintética. Zonas marrons no meio do ciclo da safrinha alertam para lagartas.",
-        pragas: [ 
-            { 
-                nome: "Lagarta-do-cartucho (Spodoptera frugiperda)", 
-                desc: "Principal praga. Alojam-se no cartucho e devoram folhas novas, podendo destruir o ponto de crescimento. Sintomas: Folhas raspadas, furos e serragem.", 
-                imgBug: "assets/cartucho0.png", 
-                imgDamage: "assets/milho-destruido.jpg" 
+        pragas: [
+            {
+                nome: "Lagarta-do-cartucho (Spodoptera frugiperda)",
+                desc: "Principal praga. Alojam-se no cartucho e devoram folhas novas, podendo destruir o ponto de crescimento. Sintomas: Folhas raspadas, furos e serragem.",
+                imgBug: "assets/cartucho0.png",
+                imgDamage: "assets/milho-destruido.jpg"
             },
-            { 
-                nome: "Cigarrinha-do-milho (Dalbulus maidis)", 
-                desc: "Vetor de patógenos (molicutes e vírus). Causa enfezamentos. Plantas amareladas, nanismo, espigas chochas e falhas severas.", 
-                imgBug: "https://placehold.co/600x400/222/4caf50?text=Foto:+Cigarrinha-do-milho", 
-                imgDamage: "https://placehold.co/600x400/222/f44336?text=Dano:+Enfezamento" 
+            {
+                nome: "Cigarrinha-do-milho (Dalbulus maidis)",
+                desc: "Vetor de patógenos (molicutes e vírus). Causa enfezamentos. Plantas amareladas, nanismo, espigas chochas e falhas severas.",
+                imgBug: "https://placehold.co/600x400/0a1400/8bc34a?text=Foto:+Cigarrinha-do-Milho\n(Dalbulus+maidis)",
+                imgDamage: "https://placehold.co/600x400/1a1000/ffc107?text=Dano:+Enfezamento+do+Milho\n(Plantas+Nanicas+e+Amareladas)"
             },
-            { 
-                nome: "Percevejo-barriga-verde (Dichelops furcatus)", 
-                desc: "Ataca a base do colmo de plantas jovens, sugando seiva e injetando toxinas. Causa 'coração morto', furos transversais e manchas.", 
-                imgBug: "https://placehold.co/600x400/222/4caf50?text=Foto:+Percevejo-barriga-verde", 
-                imgDamage: "https://placehold.co/600x400/222/f44336?text=Dano:+Coracao+Morto" 
+            {
+                nome: "Percevejo-barriga-verde (Dichelops furcatus)",
+                desc: "Ataca a base do colmo de plantas jovens, sugando seiva e injetando toxinas. Causa 'coração morto', furos transversais e manchas.",
+                imgBug: "assets/barriga-verde0.png",
+                imgDamage: "assets/barriga-verde.png"
             },
-            { 
-                nome: "Lagarta-elasmo (Elasmopalpus lignosellus)", 
-                desc: "Destrutiva em secas. Penetra no coleto da planta, alimentando-se de tecidos. Resulta em murchamento e falhas nas linhas.", 
-                imgBug: "https://placehold.co/600x400/222/4caf50?text=Foto:+Lagarta-elasmo", 
-                imgDamage: "https://placehold.co/600x400/222/f44336?text=Dano:+Falhas+no+Plantio" 
+            {
+                nome: "Lagarta-elasmo (Elasmopalpus lignosellus)",
+                desc: "Destrutiva em secas. Penetra no coleto da planta, alimentando-se de tecidos. Resulta em murchamento e falhas nas linhas.",
+                imgBug: "assets/lagarta-elasmo.jpg",
+                imgDamage: "https://placehold.co/600x400/0a1400/8bc34a?text=Dano:+Falhas+nas+Linhas\n(Murcha+e+Morte+da+Plantula)"
             },
-            { 
-                nome: "Larva-alfinete (Diabrotica speciosa)", 
-                desc: "Fase larval de um besouro comum. Representa grande ameaça ao sistema radicular da cultura do milho.", 
-                imgBug: "https://placehold.co/600x400/222/4caf50?text=Foto:+Larva-alfinete", 
-                imgDamage: "https://placehold.co/600x400/222/f44336?text=Dano:+Raizes+Prejudicadas" 
+            {
+                nome: "Larva-alfinete (Diabrotica speciosa)",
+                desc: "Fase larval de um besouro comum. Representa grande ameaça ao sistema radicular da cultura do milho.",
+                imgBug: "https://placehold.co/600x400/0a1400/8bc34a?text=Foto:+Larva-alfinete\n(Diabrotica+speciosa)",
+                imgDamage: "https://placehold.co/600x400/1a0800/ff9800?text=Dano:+Raizes+Destruidas\n(Acamamento+e+Falhas)"
             }
         ]
     },
@@ -207,36 +207,36 @@ const agroDB = {
         lon: -47.80, 
         local: "Ribeirão Preto - SP",
         laudoSatelite: "Talhões marrons representam palhada no solo. Verde escuro indica canavial pronto para o corte.",
-        pragas: [ 
-            { 
-                nome: "Broca-da-cana (Diatraea saccharalis)", 
-                desc: "Abrem galerias no interior dos colmos, favorecendo fungos e tombamento. Reduz drasticamente açúcar e rendimento do etanol.", 
-                imgBug: "https://placehold.co/600x400/222/4caf50?text=Foto:+Broca-da-cana", 
-                imgDamage: "https://placehold.co/600x400/222/f44336?text=Dano:+Galerias+no+Colmo" 
+        pragas: [
+            {
+                nome: "Broca-da-cana (Diatraea saccharalis)",
+                desc: "Abrem galerias no interior dos colmos, favorecendo fungos e tombamento. Reduz drasticamente açúcar e rendimento do etanol.",
+                imgBug: "https://placehold.co/600x400/0f1a08/8bc34a?text=Foto:+Broca-da-Cana\n(Diatraea+saccharalis)",
+                imgDamage: "https://placehold.co/600x400/1a0800/ff9800?text=Dano:+Galerias+no+Colmo\n(Tombamento+e+Fusariose)"
             },
-            { 
-                nome: "Cigarrinha-das-raízes (Mahanarva fimbriolata)", 
-                desc: "Ninfas sugam raízes, adultos atacam folhas. Injetam toxinas que causam amarelecimento e queima da planta.", 
-                imgBug: "https://placehold.co/600x400/222/4caf50?text=Foto:+Cigarrinha-das-raizes", 
-                imgDamage: "https://placehold.co/600x400/222/f44336?text=Dano:+Queima+da+Planta" 
+            {
+                nome: "Cigarrinha-das-raízes (Mahanarva fimbriolata)",
+                desc: "Ninfas sugam raízes, adultos atacam folhas. Injetam toxinas que causam amarelecimento e queima da planta.",
+                imgBug: "https://placehold.co/600x400/0f1a08/8bc34a?text=Foto:+Cigarrinha-das-Raizes\n(Mahanarva+fimbriolata)",
+                imgDamage: "https://placehold.co/600x400/1a1000/ffc107?text=Dano:+Queima+da+Ponta+das+Folhas\n(Amarelamento+Severo)"
             },
-            { 
-                nome: "Bicudo-da-cana (Sphenophorus levis)", 
-                desc: "Larvas alimentam-se do rizoma (parte subterrânea). Compromete a brotação e causa falhas expressivas no canavial.", 
-                imgBug: "https://placehold.co/600x400/222/4caf50?text=Foto:+Bicudo-da-cana", 
-                imgDamage: "https://placehold.co/600x400/222/f44336?text=Dano:+Falhas+na+Soqueira" 
+            {
+                nome: "Bicudo-da-cana (Sphenophorus levis)",
+                desc: "Larvas alimentam-se do rizoma (parte subterrânea). Compromete a brotação e causa falhas expressivas no canavial.",
+                imgBug: "https://placehold.co/600x400/0f1a08/8bc34a?text=Foto:+Bicudo-da-Cana\n(Sphenophorus+levis)",
+                imgDamage: "https://placehold.co/600x400/1a0000/f44336?text=Dano:+Falhas+na+Soqueira\n(Rizoma+Destruido)"
             },
-            { 
-                nome: "Broca-gigante (Castnia licus)", 
-                desc: "Perfuram galerias profundas nos colmos, causando a morte do coração da planta. Causa perdas significativas.", 
-                imgBug: "https://placehold.co/600x400/222/4caf50?text=Foto:+Broca-gigante", 
-                imgDamage: "https://placehold.co/600x400/222/f44336?text=Dano:+Morte+da+Touceira" 
+            {
+                nome: "Broca-gigante (Castnia licus)",
+                desc: "Perfuram galerias profundas nos colmos, causando a morte do coração da planta. Causa perdas significativas.",
+                imgBug: "https://placehold.co/600x400/0f1a08/8bc34a?text=Foto:+Broca-Gigante\n(Castnia+licus)",
+                imgDamage: "https://placehold.co/600x400/1a0000/f44336?text=Dano:+Coracao+Morto+da+Touceira\n(Galeria+Profunda+no+Colmo)"
             },
-            { 
-                nome: "Cupins subterrâneos (Heterotermes tenuis)", 
-                desc: "Atacam os toletes no plantio, consomem raízes e destroem a base dos colmos. Causam falhas na brotação.", 
-                imgBug: "https://placehold.co/600x400/222/4caf50?text=Foto:+Cupins", 
-                imgDamage: "https://placehold.co/600x400/222/f44336?text=Dano:+Destruicao+da+Base" 
+            {
+                nome: "Cupins subterrâneos (Heterotermes tenuis)",
+                desc: "Atacam os toletes no plantio, consomem raízes e destroem a base dos colmos. Causam falhas na brotação.",
+                imgBug: "https://placehold.co/600x400/0f1a08/8bc34a?text=Foto:+Cupins+Subterraneos\n(Heterotermes+tenuis)",
+                imgDamage: "https://placehold.co/600x400/1a1400/ffc107?text=Dano:+Base+do+Colmo+Destruida\n(Falhas+na+Brotacao)"
             }
         ]
     },
@@ -250,36 +250,36 @@ const agroDB = {
         lon: -45.45, 
         local: "Três Pontas - MG",
         laudoSatelite: "Cultivo perene. O mapa deve manter-se verde escuro estável o ano todo.",
-        pragas: [ 
-            { 
-                nome: "Broca-do-café (Hypothenemus hampei)", 
-                desc: "Praga-chave. Besouro fêmea perfura o fruto e abre galerias na semente. Deprecia fortemente o valor comercial da bebida.", 
-                imgBug: "https://placehold.co/600x400/222/4caf50?text=Foto:+Broca-do-cafe", 
-                imgDamage: "https://placehold.co/600x400/222/f44336?text=Dano:+Graos+Perfurados" 
+        pragas: [
+            {
+                nome: "Broca-do-café (Hypothenemus hampei)",
+                desc: "Praga-chave. Besouro fêmea perfura o fruto e abre galerias na semente. Deprecia fortemente o valor comercial da bebida.",
+                imgBug: "https://placehold.co/600x400/1a0f08/a1887f?text=Foto:+Broca-do-Cafe\n(Hypothenemus+hampei)",
+                imgDamage: "https://placehold.co/600x400/1a0800/ff9800?text=Dano:+Graos+Perfurados\n(Galeria+na+Semente+-+Deprecia+Bebida)"
             },
-            { 
-                nome: "Bicho-mineiro (Leucoptera coffeella)", 
-                desc: "A lagarta penetra nas folhas e consome o tecido, criando minas esbranquiçadas. Causa queda precoce das folhas.", 
-                imgBug: "https://placehold.co/600x400/222/4caf50?text=Foto:+Bicho-mineiro", 
-                imgDamage: "https://placehold.co/600x400/222/f44336?text=Dano:+Minas+nas+Folhas" 
+            {
+                nome: "Bicho-mineiro (Leucoptera coffeella)",
+                desc: "A lagarta penetra nas folhas e consome o tecido, criando minas esbranquiçadas. Causa queda precoce das folhas.",
+                imgBug: "https://placehold.co/600x400/1a0f08/a1887f?text=Foto:+Bicho-Mineiro\n(Leucoptera+coffeella)",
+                imgDamage: "https://placehold.co/600x400/0f1a08/cddc39?text=Dano:+Minas+Esbranquicadas\n(Queda+Precoce+das+Folhas)"
             },
-            { 
-                nome: "Nematoides (Meloidogyne spp.)", 
-                desc: "Vermes microscópicos que atacam o sistema radicular. Formam galhas, causando amarelamento e plantas atrofiadas.", 
-                imgBug: "https://placehold.co/600x400/222/4caf50?text=Foto:+Nematoides", 
-                imgDamage: "https://placehold.co/600x400/222/f44336?text=Dano:+Galhas+nas+Raizes" 
+            {
+                nome: "Nematoides (Meloidogyne spp.)",
+                desc: "Vermes microscópicos que atacam o sistema radicular. Formam galhas, causando amarelamento e plantas atrofiadas.",
+                imgBug: "https://placehold.co/600x400/1a0f08/a1887f?text=Foto:+Nematoides\n(Meloidogyne+spp.)",
+                imgDamage: "https://placehold.co/600x400/1a1000/ffc107?text=Dano:+Galhas+nas+Raizes\n(Amarelamento+e+Atrofia)"
             },
-            { 
-                nome: "Cigarras (Quesada gigas)", 
-                desc: "Na fase de ninfa fixam-se nas raízes. Sugam a seiva continuamente, drenando a vitalidade e causando definhamento.", 
-                imgBug: "https://placehold.co/600x400/222/4caf50?text=Foto:+Cigarras", 
-                imgDamage: "https://placehold.co/600x400/222/f44336?text=Dano:+Definhamento" 
+            {
+                nome: "Cigarras (Quesada gigas)",
+                desc: "Na fase de ninfa fixam-se nas raízes. Sugam a seiva continuamente, drenando a vitalidade e causando definhamento.",
+                imgBug: "https://placehold.co/600x400/1a0f08/a1887f?text=Foto:+Cigarras\n(Quesada+gigas)",
+                imgDamage: "https://placehold.co/600x400/1a0800/ff9800?text=Dano:+Definhamento+Progressivo\n(Seca+da+Planta+por+Falta+de+Seiva)"
             },
-            { 
-                nome: "Ácaro-vermelho (Oligonychus ilicis)", 
-                desc: "Atacam a parte superior das folhas. O sintoma é o bronzeamento das folhas, perda de brilho e queda precoce.", 
-                imgBug: "https://placehold.co/600x400/222/4caf50?text=Foto:+Acaro-vermelho", 
-                imgDamage: "https://placehold.co/600x400/222/f44336?text=Dano:+Folhas+Bronzeadas" 
+            {
+                nome: "Ácaro-vermelho (Oligonychus ilicis)",
+                desc: "Atacam a parte superior das folhas. O sintoma é o bronzeamento das folhas, perda de brilho e queda precoce.",
+                imgBug: "https://placehold.co/600x400/1a0f08/a1887f?text=Foto:+Acaro-Vermelho\n(Oligonychus+ilicis)",
+                imgDamage: "https://placehold.co/600x400/1a0800/ff9800?text=Dano:+Bronzeamento+das+Folhas\n(Queda+Precoce+-+Perda+de+Brilho)"
             }
         ]
     },
@@ -293,36 +293,36 @@ const agroDB = {
         lon: -45.80, 
         local: "Barreiras - BA",
         laudoSatelite: "Na fase vegetativa deve apresentar verde intenso. Na época de desfolha, cores quentes são esperadas.",
-        pragas: [ 
-            { 
-                nome: "Bicudo-do-algodoeiro (Anthonomus grandis)", 
-                desc: "Inimigo nº1. Ataca botões florais e maçãs, causando queda ou má formação. Alto poder de destruição.", 
-                imgBug: "https://placehold.co/600x400/222/4caf50?text=Foto:+Bicudo-do-algodoeiro", 
-                imgDamage: "https://placehold.co/600x400/222/f44336?text=Dano:+Botoes+Caidos" 
+        pragas: [
+            {
+                nome: "Bicudo-do-algodoeiro (Anthonomus grandis)",
+                desc: "Inimigo nº1. Ataca botões florais e maçãs, causando queda ou má formação. Alto poder de destruição.",
+                imgBug: "https://placehold.co/600x400/0f1a12/80cbc4?text=Foto:+Bicudo-do-Algodoeiro\n(Anthonomus+grandis)",
+                imgDamage: "https://placehold.co/600x400/1a0800/ff9800?text=Dano:+Botoes+Florais+Caidos\n(Maca+Perfurada+e+Abortada)"
             },
-            { 
-                nome: "Mosca-branca (Bemisia tabaci)", 
-                desc: "Suga a seiva, transmite viroses e expele honeydew, favorecendo a fumagina que deprecia a pluma.", 
-                imgBug: "https://placehold.co/600x400/222/4caf50?text=Foto:+Mosca-branca", 
-                imgDamage: "https://placehold.co/600x400/222/f44336?text=Dano:+Fumagina+na+Pluma" 
+            {
+                nome: "Mosca-branca (Bemisia tabaci)",
+                desc: "Suga a seiva, transmite viroses e expele honeydew, favorecendo a fumagina que deprecia a pluma.",
+                imgBug: "https://placehold.co/600x400/0f1a12/80cbc4?text=Foto:+Mosca-Branca\n(Bemisia+tabaci)",
+                imgDamage: "https://placehold.co/600x400/111111/e0e0e0?text=Dano:+Fumagina+na+Pluma\n(Viroses+e+Perda+de+Qualidade)"
             },
-            { 
-                nome: "Pulgão-do-algodoeiro (Aphis gossypii)", 
-                desc: "Ataca brotações, causando enrolamento das folhas. Transmite viroses severas à cultura.", 
-                imgBug: "https://placehold.co/600x400/222/4caf50?text=Foto:+Pulgao", 
-                imgDamage: "https://placehold.co/600x400/222/f44336?text=Dano:+Folhas+Enroladas" 
+            {
+                nome: "Pulgão-do-algodoeiro (Aphis gossypii)",
+                desc: "Ataca brotações, causando enrolamento das folhas. Transmite viroses severas à cultura.",
+                imgBug: "https://placehold.co/600x400/0f1a12/80cbc4?text=Foto:+Pulgao-do-Algodoeiro\n(Aphis+gossypii)",
+                imgDamage: "https://placehold.co/600x400/0a1500/cddc39?text=Dano:+Enrolamento+das+Folhas\n(Viroses+e+Reducao+de+Crescimento)"
             },
-            { 
-                nome: "Ácaro-rajado e Ácaro-branco", 
-                desc: "Atacam a face inferior das folhas, causando descoloração, necrose e teias. Reduzem a área fotossintética.", 
-                imgBug: "https://placehold.co/600x400/222/4caf50?text=Foto:+Acaros", 
-                imgDamage: "https://placehold.co/600x400/222/f44336?text=Dano:+Necrose" 
+            {
+                nome: "Ácaro-rajado e Ácaro-branco",
+                desc: "Atacam a face inferior das folhas, causando descoloração, necrose e teias. Reduzem a área fotossintética.",
+                imgBug: "https://placehold.co/600x400/0f1a12/80cbc4?text=Foto:+Acaros+do+Algodao\n(Tetranychus+spp.)",
+                imgDamage: "https://placehold.co/600x400/1a1000/ffc107?text=Dano:+Necrose+e+Teias\n(Descoloracao+e+Queda+Foliar)"
             },
-            { 
-                nome: "Percevejo-castanho e Marrom", 
-                desc: "Atacam raízes, botões e maçãs. Sugam a seiva causando abortamento ou manchas amareladas na pluma.", 
-                imgBug: "https://placehold.co/600x400/222/4caf50?text=Foto:+Percevejos", 
-                imgDamage: "https://placehold.co/600x400/222/f44336?text=Dano:+Pluma+Manchada" 
+            {
+                nome: "Percevejo-castanho e Marrom",
+                desc: "Atacam raízes, botões e maçãs. Sugam a seiva causando abortamento ou manchas amareladas na pluma.",
+                imgBug: "https://placehold.co/600x400/0f1a12/80cbc4?text=Foto:+Percevejo-Castanho\n(Euschistus+heros)",
+                imgDamage: "https://placehold.co/600x400/1a1000/ffc107?text=Dano:+Pluma+Manchada\n(Abortamento+de+Macas)"
             }
         ]
     }
@@ -595,13 +595,15 @@ function setupPestHotspots(pragas) {
 function openPestModal(praga) {
     document.getElementById('modalPestName').innerText = praga.nome;
     document.getElementById('modalPestDesc').innerText = praga.desc;
-    
-    // Injeta as duas imagens no Carrossel
+
     carouselTrack.innerHTML = `
         <div class="carousel-slide"><img src="${praga.imgBug}" alt="Inseto da Praga"></div>
-        <div class="carousel-slide"><img src="${praga.imgDamage}" alt="Sintoma da Praga na Folha"></div>
+        <div class="carousel-slide"><img src="${praga.imgDamage}" alt="Sintoma da Praga na Plantação"></div>
     `;
-    
+
+    const slideWidth = carouselTrack.parentElement.offsetWidth;
+    carouselTrack.querySelectorAll('.carousel-slide').forEach(s => { s.style.width = slideWidth + 'px'; });
+
     currentPestIndex = 0;
     updateCarousel();
     pestModal.classList.add('open');
@@ -613,7 +615,8 @@ document.getElementById('btnNext')?.addEventListener('click', () => { currentPes
 document.getElementById('btnPrev')?.addEventListener('click', () => { currentPestIndex = 0; updateCarousel(); });
 
 function updateCarousel() {
-    carouselTrack.style.transform = `translateX(-${currentPestIndex * 100}%)`;
+    const slideWidth = carouselTrack.parentElement.offsetWidth;
+    carouselTrack.style.transform = `translateX(-${currentPestIndex * slideWidth}px)`;
 }
 
 
