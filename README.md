@@ -842,7 +842,7 @@ Turma **1TDSPF** — FIAP Sao Paulo — Global Solution 2026/1
 | Foto | Nome | RM | Disciplina | Links |
 |:---:|---|:---:|---|---|
 | <img src="assets/DiogoRM573301.jpg" width="80" alt="Diogo Guilherme de Assis Reis"> | **Diogo Guilherme de Assis Reis** | 573301 | Front-End Design Engineering | [GitHub](https://github.com/DioohReis) · [LinkedIn](https://www.linkedin.com/in/diogo-guilherme-de-assis-reis-95b11624b/) |
-| <img src="assets/Gabriel_Ricardo-01.jpeg" width="80" alt="Gabriel Ricardo Lima"> | **Gabriel Ricardo Lima** | 573302 | Software Engineering | [GitHub](https://github.com/gabriel-ricardo-ADS) · [LinkedIn](https://www.linkedin.com/in/gabriel-ricardo-lima/) |
+| <img src="assets/Gabriel_Ricardo-01.jpeg" width="80" alt="Gabriel Ricardo Lima"> | **Gabriel Ricardo Lima** | 572279 | Software Engineering | [GitHub](https://github.com/gabriel-ricardo-ADS) · [LinkedIn](https://www.linkedin.com/in/gabriel-ricardo-lima/) |
 | <img src="assets/Matheus_Rodrigues.jpeg" width="80" alt="Matheus Rodrigues Serrão"> | **Matheus Rodrigues Serrão** | 570469 | Relational Database | [GitHub](https://github.com/MatheusRodriguesSerrao) · [LinkedIn](https://www.linkedin.com/in/matheus-rodrigues-06060a3a6/) |
 | <img src="assets/LuizHenrique572727.jpeg" width="80" alt="Luiz Henrique Alves Albarello"> | **Luiz Henrique Alves Albarello** | 572727 | Computational Thinking | [GitHub](https://github.com/LuizHenriqueAAlbarello) · [LinkedIn](https://www.linkedin.com/in/luiz-henrique-alves-albarello-82297b410/) |
 | <img src="assets/razo.01.jpeg" width="80" alt="Gabriel Razo Dantas"> | **Gabriel Razo Dantas** | 572244 | AI & Chatbot | [GitHub](https://github.com/gabrielrazod9j-ops) · [LinkedIn](https://www.linkedin.com/in/gabriel-razo-dantas-34724b301) |
