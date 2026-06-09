@@ -138,19 +138,19 @@ const agroDB = {
                 nome: "Complexo de Percevejos",
                 desc: "Inserem seus estiletes nos grãos em formação, causando abortamento, grãos chochos, manchas (soja picada) e retenção foliar.",
                 imgBug: "assets/Complexo-Percevejos-soja.webp",
-                imgDamage: "https://placehold.co/600x400/1a1400/ffc107?text=Dano:+Graos+Chochos+e+Manchados\n(Soja+Picada)"
+                imgDamage: "assets/percevejo_dano.webp"
             },
             {
                 nome: "Mosca-branca (Bemisia tabaci)",
                 desc: "Suga a seiva da planta e expele substância que favorece a fumagina, prejudicando a fotossíntese, além de transmitir viroses.",
                 imgBug: "assets/mosca-branca.jpg",
-                imgDamage: "https://placehold.co/600x400/111111/e0e0e0?text=Dano:+Fumagina+nas+Folhas\n(Viroses+e+Amarelamento)"
+                imgDamage: "assets/mosca_branca_dano.webp"
             },
             {
                 nome: "Ácaros (Tetranychus urticae)",
                 desc: "Atacam a parte inferior das folhas causando amarelamento e teias, especialmente em períodos de seca prolongada.",
                 imgBug: "assets/acaros-soja.jpg",
-                imgDamage: "https://placehold.co/600x400/1a1a00/ffeb3b?text=Dano:+Amarelamento+e+Teias\n(Face+Inferior+das+Folhas)"
+                imgDamage: "assets/acaros_dano.webp"
             }
         ]
     },
