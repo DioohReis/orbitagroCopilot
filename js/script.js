@@ -1566,28 +1566,6 @@ if (savedCrop && agroDB[savedCrop]) {
     const canvas = document.getElementById('rainCanvas');
     if (!canvas) return;
 
-<<<<<<< HEAD
-    const ctx   = canvas.getContext('2d');
-    const COUNT = 60;
-    const drops = [];
-    let   animId, running = false;
-
-    function resize() {
-        const parent = canvas.parentElement;
-        canvas.width  = parent ? parent.offsetWidth  : window.innerWidth;
-        canvas.height = parent ? parent.offsetHeight : window.innerHeight;
-    }
-
-    function initDrops() {
-        drops.length = 0;
-        for (let i = 0; i < COUNT; i++) {
-            drops.push({
-                x:       Math.random() * canvas.width,
-                y:       Math.random() * canvas.height,
-                speed:   3.5 + Math.random() * 3.5,
-                len:     12  + Math.random() * 24,
-                opacity: 0.06 + Math.random() * 0.22,
-=======
     const ctx    = canvas.getContext('2d');
     const CHARS  = '01%°~·×▪01%'.split('');
     const FS     = 13;
@@ -1613,35 +1591,12 @@ if (savedCrop && agroDB[savedCrop]) {
                 y:     -Math.random() * canvas.height,
                 speed: 1.2 + Math.random() * 1.4,
                 head:  randChar(),
->>>>>>> upstream/main
             });
         }
     }
 
     function tick() {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
-<<<<<<< HEAD
-        const sinA = Math.sin(-0.18);
-        const cosA = Math.cos(-0.18);
-
-        drops.forEach(d => {
-            ctx.beginPath();
-            ctx.moveTo(d.x, d.y);
-            ctx.lineTo(d.x + sinA * d.len, d.y + cosA * d.len);
-            ctx.strokeStyle = `rgba(148, 202, 255, ${d.opacity})`;
-            ctx.lineWidth   = 0.75;
-            ctx.stroke();
-
-            d.x += sinA * d.speed * 0.55;
-            d.y += cosA * d.speed;
-
-            if (d.y > canvas.height + d.len) {
-                d.y = -d.len;
-                d.x = Math.random() * (canvas.width + 40) - 20;
-                d.speed   = 3.5 + Math.random() * 3.5;
-                d.len     = 12  + Math.random() * 24;
-                d.opacity = 0.06 + Math.random() * 0.22;
-=======
         ctx.font = `bold ${FS}px monospace`;
 
         cols.forEach(col => {
@@ -1660,21 +1615,11 @@ if (savedCrop && agroDB[savedCrop]) {
                 col.y     = -FS * 2;
                 col.speed = 1.2 + Math.random() * 1.4;
                 col.head  = randChar();
->>>>>>> upstream/main
             }
         });
         animId = requestAnimationFrame(tick);
     }
 
-<<<<<<< HEAD
-    function start() { if (!running) { running = true;  tick();                           } }
-    function stop()  { if (running)  { running = false; cancelAnimationFrame(animId);     } }
-
-    resize();
-    initDrops();
-
-    window.addEventListener('resize', () => { resize(); initDrops(); });
-=======
     function start() { if (!running) { running = true;  tick(); } }
     function stop()  { if (running)  { running = false; cancelAnimationFrame(animId); } }
 
@@ -1838,7 +1783,6 @@ if (savedCrop && agroDB[savedCrop]) {
 
     resize();
     window.addEventListener('resize', resize);
->>>>>>> upstream/main
 
     const stageEl = document.getElementById('stage-chuva');
     if (stageEl) {
@@ -1849,9 +1793,6 @@ if (savedCrop && agroDB[savedCrop]) {
 })();
 
 // ==========================================
-<<<<<<< HEAD
-// 9. SATELLITE LIGHTBOX
-=======
 // 10. WEBGL LEAF PARTICLES (STAGE PRAGAS)
 // ==========================================
 (() => {
@@ -2038,7 +1979,6 @@ if (savedCrop && agroDB[savedCrop]) {
 
 // ==========================================
 // 11. SATELLITE LIGHTBOX
->>>>>>> upstream/main
 // ==========================================
 (() => {
     const lightbox   = document.getElementById('satelliteLightbox');

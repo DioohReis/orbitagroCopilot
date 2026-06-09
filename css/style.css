@@ -2702,11 +2702,7 @@ label {
   isolation: isolate;
 }
 
-<<<<<<< HEAD
-#rainCanvas {
-=======
 #glRainCanvas {
->>>>>>> upstream/main
   position: absolute;
   inset: 0;
   width: 100%;
@@ -2715,13 +2711,6 @@ label {
   z-index: 0;
 }
 
-<<<<<<< HEAD
-#stage-chuva > *:not(#rainCanvas) {
-  position: relative;
-  z-index: 1;
-}
-
-=======
 #rainCanvas {
   position: absolute;
   inset: 0;
@@ -2745,7 +2734,6 @@ label {
   z-index: 2;
 }
 
->>>>>>> upstream/main
 /* =========================================
    15. PEST SECTION — HUD & OVERLAY POLISH
    ========================================= */
