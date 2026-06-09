@@ -174,7 +174,7 @@ const agroDB = {
             {
                 nome: "Cigarrinha-do-milho (Dalbulus maidis)",
                 desc: "Vetor de patógenos (molicutes e vírus). Causa enfezamentos. Plantas amareladas, nanismo, espigas chochas e falhas severas.",
-                imgBug: "https://placehold.co/600x400/0a1400/8bc34a?text=Foto:+Cigarrinha-do-Milho\n(Dalbulus+maidis)",
+                imgBug: "assets/cigarra_milho.webp",
                 imgDamage: "https://placehold.co/600x400/1a1000/ffc107?text=Dano:+Enfezamento+do+Milho\n(Plantas+Nanicas+e+Amareladas)"
             },
             {
