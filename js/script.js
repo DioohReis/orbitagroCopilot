@@ -309,20 +309,20 @@ const agroDB = {
             {
                 nome: "Pulgão-do-algodoeiro (Aphis gossypii)",
                 desc: "Ataca brotações, causando enrolamento das folhas. Transmite viroses severas à cultura.",
-                imgBug: "https://placehold.co/600x400/0f1a12/80cbc4?text=Foto:+Pulgao-do-Algodoeiro\n(Aphis+gossypii)",
-                imgDamage: "https://placehold.co/600x400/0a1500/cddc39?text=Dano:+Enrolamento+das+Folhas\n(Viroses+e+Reducao+de+Crescimento)"
+                imgBug: "assets/pulgao_a.webp",
+                imgDamage: "assets/pulgao_dano.webp"
             },
             {
                 nome: "Ácaro-rajado e Ácaro-branco",
                 desc: "Atacam a face inferior das folhas, causando descoloração, necrose e teias. Reduzem a área fotossintética.",
-                imgBug: "https://placehold.co/600x400/0f1a12/80cbc4?text=Foto:+Acaros+do+Algodao\n(Tetranychus+spp.)",
-                imgDamage: "https://placehold.co/600x400/1a1000/ffc107?text=Dano:+Necrose+e+Teias\n(Descoloracao+e+Queda+Foliar)"
+                imgBug: "assets/acaro_rajado.webp",
+                imgDamage: "assets/acarorajado_dano.webp"
             },
             {
                 nome: "Percevejo-castanho e Marrom",
                 desc: "Atacam raízes, botões e maçãs. Sugam a seiva causando abortamento ou manchas amareladas na pluma.",
-                imgBug: "https://placehold.co/600x400/0f1a12/80cbc4?text=Foto:+Percevejo-Castanho\n(Euschistus+heros)",
-                imgDamage: "https://placehold.co/600x400/1a1000/ffc107?text=Dano:+Pluma+Manchada\n(Abortamento+de+Macas)"
+                imgBug: "assets/percevejo_marrom.webp",
+                imgDamage: "assets/percevejo_marrom_dano.webp"
             }
         ]
     }
