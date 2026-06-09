@@ -223,20 +223,20 @@ const agroDB = {
             {
                 nome: "Bicudo-da-cana (Sphenophorus levis)",
                 desc: "Larvas alimentam-se do rizoma (parte subterrânea). Compromete a brotação e causa falhas expressivas no canavial.",
-                imgBug: "https://placehold.co/600x400/0f1a08/8bc34a?text=Foto:+Bicudo-da-Cana\n(Sphenophorus+levis)",
-                imgDamage: "https://placehold.co/600x400/1a0000/f44336?text=Dano:+Falhas+na+Soqueira\n(Rizoma+Destruido)"
+                imgBug: "assets/bicudo_cana.webp",
+                imgDamage: "assets/bicudo_cana_dano.webp"
             },
             {
                 nome: "Broca-gigante (Castnia licus)",
                 desc: "Perfuram galerias profundas nos colmos, causando a morte do coração da planta. Causa perdas significativas.",
-                imgBug: "https://placehold.co/600x400/0f1a08/8bc34a?text=Foto:+Broca-Gigante\n(Castnia+licus)",
-                imgDamage: "https://placehold.co/600x400/1a0000/f44336?text=Dano:+Coracao+Morto+da+Touceira\n(Galeria+Profunda+no+Colmo)"
+                imgBug: "assets/broca_gigante.webp",
+                imgDamage: "assets/broca_gigante_dano.webp"
             },
             {
                 nome: "Cupins subterrâneos (Heterotermes tenuis)",
                 desc: "Atacam os toletes no plantio, consomem raízes e destroem a base dos colmos. Causam falhas na brotação.",
-                imgBug: "https://placehold.co/600x400/0f1a08/8bc34a?text=Foto:+Cupins+Subterraneos\n(Heterotermes+tenuis)",
-                imgDamage: "https://placehold.co/600x400/1a1400/ffc107?text=Dano:+Base+do+Colmo+Destruida\n(Falhas+na+Brotacao)"
+                imgBug: "assets/cupim_sub.webp",
+                imgDamage: "cupim_sub_dano.webp"
             }
         ]
     },
