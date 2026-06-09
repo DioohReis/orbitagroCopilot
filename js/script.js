@@ -211,14 +211,14 @@ const agroDB = {
             {
                 nome: "Broca-da-cana (Diatraea saccharalis)",
                 desc: "Abrem galerias no interior dos colmos, favorecendo fungos e tombamento. Reduz drasticamente açúcar e rendimento do etanol.",
-                imgBug: "https://placehold.co/600x400/0f1a08/8bc34a?text=Foto:+Broca-da-Cana\n(Diatraea+saccharalis)",
-                imgDamage: "https://placehold.co/600x400/1a0800/ff9800?text=Dano:+Galerias+no+Colmo\n(Tombamento+e+Fusariose)"
+                imgBug: "assets/broca_cana.webp",
+                imgDamage: "assets/broca_cana_dano.webp"
             },
             {
                 nome: "Cigarrinha-das-raízes (Mahanarva fimbriolata)",
                 desc: "Ninfas sugam raízes, adultos atacam folhas. Injetam toxinas que causam amarelecimento e queima da planta.",
-                imgBug: "https://placehold.co/600x400/0f1a08/8bc34a?text=Foto:+Cigarrinha-das-Raizes\n(Mahanarva+fimbriolata)",
-                imgDamage: "https://placehold.co/600x400/1a1000/ffc107?text=Dano:+Queima+da+Ponta+das+Folhas\n(Amarelamento+Severo)"
+                imgBug: "assets/cigarrinha_das_raizes.webp",
+                imgDamage: "cigarrinha_raizes_dano.webp"
             },
             {
                 nome: "Bicudo-da-cana (Sphenophorus levis)",
