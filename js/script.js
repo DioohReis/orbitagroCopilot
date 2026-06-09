@@ -95,62 +95,62 @@ const agroDB = {
             { 
                 nome: "Lagarta-elasmo (Elasmopalpus lignosellus)", 
                 desc: "Conhecida como broca-do-colo. Penetra na haste das plântulas, podendo causar a morte da planta.", 
-                imgBug: "https://placehold.co/600x400/222/4caf50?text=Foto:+Lagarta-elasmo", 
-                imgDamage: "https://placehold.co/600x400/222/f44336?text=Dano:+Morte+da+Planta" 
+                imgBug: "assets/lagarta-elasmo.jpg", 
+                imgDamage: "assets/soja_morta.jpg" 
             },
             { 
                 nome: "Corós (Diloboderus abderus)", 
                 desc: "Larvas que vivem no solo e atacam o sistema radicular e as sementes, gerando reboleiras com falhas de estande.", 
-                imgBug: "https://placehold.co/600x400/222/4caf50?text=Foto:+Coros", 
-                imgDamage: "https://placehold.co/600x400/222/f44336?text=Dano:+Raizes+Destruidas" 
+                imgBug: "assets/larva_coros.jpg", 
+                imgDamage: "assets/soja_morta.jpg" 
             },
             { 
                 nome: "Lagarta-rosca (Agrotis ipsilon)", 
                 desc: "Corta as plantas jovens rente ao solo, causando tombamento e falhas na germinação.", 
-                imgBug: "https://placehold.co/600x400/222/4caf50?text=Foto:+Lagarta-rosca", 
-                imgDamage: "https://placehold.co/600x400/222/f44336?text=Dano:+Tombamento" 
+                imgBug: "assets/lagarta_rosca.png", 
+                imgDamage: "assets/soja_morta.jpg" 
             },
             { 
                 nome: "Lagarta-da-soja (Anticarsia gemmatalis)", 
                 desc: "A mais clássica desfolhadora, tem coloração esverdeada e listras brancas. Alimenta-se vorazmente das folhas.", 
-                imgBug: "https://placehold.co/600x400/222/4caf50?text=Foto:+Lagarta-da-soja", 
-                imgDamage: "https://placehold.co/600x400/222/f44336?text=Dano:+Desfolha+Severa" 
+                imgBug: "assets/lagarta-da-soja.png", 
+                imgDamage: "assets/soja_morta.jpg" 
             },
             { 
                 nome: "Falsa-medideira (Chrysodeixis includens)", 
                 desc: "As lagartas movem-se curvando o corpo e consomem o limbo foliar. São de controle mais difícil e causam grandes prejuízos.", 
-                imgBug: "https://placehold.co/600x400/222/4caf50?text=Foto:+Falsa-medideira", 
-                imgDamage: "https://placehold.co/600x400/222/f44336?text=Dano:+Folhas+Corroidas" 
+                imgBug: "assets/falsa-medideira.jpg", 
+                imgDamage: "assets/soja_morta.jpg" 
             },
             { 
                 nome: "Complexo Spodoptera", 
                 desc: "Atacam desde folhas até flores e vagens, apresentando resistência a algumas tecnologias Bt.", 
-                imgBug: "https://placehold.co/600x400/222/4caf50?text=Foto:+Spodoptera", 
-                imgDamage: "https://placehold.co/600x400/222/f44336?text=Dano:+Ataque+Vagens" 
+                imgBug: "assets/Complexo-Spodoptera.jpg", 
+                imgDamage: "assets/soja_morta.jpg" 
             },
             { 
                 nome: "Helicoverpa (Helicoverpa armigera)", 
                 desc: "Altamente polífaga e destrutiva, consome folhas, brotos, flores e perfura vagens.", 
-                imgBug: "https://placehold.co/600x400/222/4caf50?text=Foto:+Helicoverpa", 
-                imgDamage: "https://placehold.co/600x400/222/f44336?text=Dano:+Vagens+Perfuradas" 
+                imgBug: "assets/Helicoverpa.jpg", 
+                imgDamage: "assets/soja_morta.jpg" 
             },
             { 
                 nome: "Complexo de Percevejos", 
                 desc: "Inserem seus estiletes nos grãos em formação, causando abortamento, grãos chochos, manchas (soja picada) e retenção foliar.", 
-                imgBug: "https://placehold.co/600x400/222/4caf50?text=Foto:+Percevejos", 
-                imgDamage: "https://placehold.co/600x400/222/f44336?text=Dano:+Graos+Chochos" 
+                imgBug: "assets/Complexo-Percevejos-soja.webp", 
+                imgDamage: "assets/soja_morta.jpg" 
             },
             { 
                 nome: "Mosca-branca (Bemisia tabaci)", 
                 desc: "Suga a seiva da planta e expele substância que favorece a fumagina, prejudicando a fotossíntese, além de transmitir viroses.", 
-                imgBug: "https://placehold.co/600x400/222/4caf50?text=Foto:+Mosca-branca", 
-                imgDamage: "https://placehold.co/600x400/222/f44336?text=Dano:+Fumagina" 
+                imgBug: "assets/mosca-branca.jpg", 
+                imgDamage: "assets/soja_morta.jpg" 
             },
             { 
                 nome: "Ácaros (Tetranychus urticae)", 
                 desc: "Atacam a parte inferior das folhas causando amarelamento e teias, especialmente em períodos de seca prolongada.", 
-                imgBug: "https://placehold.co/600x400/222/4caf50?text=Foto:+Acaros", 
-                imgDamage: "https://placehold.co/600x400/222/f44336?text=Dano:+Folhas+Amareladas" 
+                imgBug: "assets/acaros-soja.jpg", 
+                imgDamage: "assets/soja_morta.jpg" 
             }
         ]
     },
@@ -168,8 +168,8 @@ const agroDB = {
             { 
                 nome: "Lagarta-do-cartucho (Spodoptera frugiperda)", 
                 desc: "Principal praga. Alojam-se no cartucho e devoram folhas novas, podendo destruir o ponto de crescimento. Sintomas: Folhas raspadas, furos e serragem.", 
-                imgBug: "https://placehold.co/600x400/222/4caf50?text=Foto:+Lagarta-do-cartucho", 
-                imgDamage: "https://placehold.co/600x400/222/f44336?text=Dano:+Cartucho+Destruido" 
+                imgBug: "assets/cartucho0.png", 
+                imgDamage: "assets/milho-destruido.jpg" 
             },
             { 
                 nome: "Cigarrinha-do-milho (Dalbulus maidis)", 
