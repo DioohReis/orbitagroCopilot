@@ -272,14 +272,14 @@ const agroDB = {
             {
                 nome: "Cigarras (Quesada gigas)",
                 desc: "Na fase de ninfa fixam-se nas raízes. Sugam a seiva continuamente, drenando a vitalidade e causando definhamento.",
-                imgBug: "https://placehold.co/600x400/1a0f08/a1887f?text=Foto:+Cigarras\n(Quesada+gigas)",
-                imgDamage: "https://placehold.co/600x400/1a0800/ff9800?text=Dano:+Definhamento+Progressivo\n(Seca+da+Planta+por+Falta+de+Seiva)"
+                imgBug: "assets/cigarra_1.webp",
+                imgDamage: "assets/cigarra_danp.webp"
             },
             {
                 nome: "Ácaro-vermelho (Oligonychus ilicis)",
                 desc: "Atacam a parte superior das folhas. O sintoma é o bronzeamento das folhas, perda de brilho e queda precoce.",
-                imgBug: "https://placehold.co/600x400/1a0f08/a1887f?text=Foto:+Acaro-Vermelho\n(Oligonychus+ilicis)",
-                imgDamage: "https://placehold.co/600x400/1a0800/ff9800?text=Dano:+Bronzeamento+das+Folhas\n(Queda+Precoce+-+Perda+de+Brilho)"
+                imgBug: "assets/acaro_v.webp",
+                imgDamage: "assets/acaro_dano.webp"
             }
         ]
     },
