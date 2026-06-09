@@ -168,8 +168,8 @@ const agroDB = {
             { 
                 nome: "Lagarta-do-cartucho (Spodoptera frugiperda)", 
                 desc: "Principal praga. Alojam-se no cartucho e devoram folhas novas, podendo destruir o ponto de crescimento. Sintomas: Folhas raspadas, furos e serragem.", 
-                imgBug: "https://placehold.co/600x400/222/4caf50?text=Foto:+Lagarta-do-cartucho", 
-                imgDamage: "https://placehold.co/600x400/222/f44336?text=Dano:+Cartucho+Destruido" 
+                imgBug: "assets/cartucho0.png", 
+                imgDamage: "assets/milho-destruido.jpg" 
             },
             { 
                 nome: "Cigarrinha-do-milho (Dalbulus maidis)", 
