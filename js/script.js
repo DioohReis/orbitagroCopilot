@@ -96,25 +96,25 @@ const agroDB = {
                 nome: "Lagarta-elasmo (Elasmopalpus lignosellus)",
                 desc: "Conhecida como broca-do-colo. Penetra na haste das plântulas, podendo causar a morte da planta.",
                 imgBug: "assets/lagarta-elasmo.jpg",
-                imgDamage: "https://placehold.co/600x400/0a0f06/8bc34a?text=Dano:+Morte+da+Plantula\n(Broca+no+Colo)"
+                imgDamage: "assets/lagarta-elasmo-dano.png"
             },
             {
                 nome: "Corós (Diloboderus abderus)",
                 desc: "Larvas que vivem no solo e atacam o sistema radicular e as sementes, gerando reboleiras com falhas de estande.",
                 imgBug: "assets/larva_coros.jpg",
-                imgDamage: "https://placehold.co/600x400/0a0f06/8bc34a?text=Dano:+Falhas+de+Estande\n(Raizes+Destruidas)"
+                imgDamage: "assets/soja-córos.webp"
             },
             {
                 nome: "Lagarta-rosca (Agrotis ipsilon)",
                 desc: "Corta as plantas jovens rente ao solo, causando tombamento e falhas na germinação.",
                 imgBug: "assets/lagarta_rosca.png",
-                imgDamage: "https://placehold.co/600x400/0a0f06/8bc34a?text=Dano:+Tombamento\n(Caule+Cortado+no+Solo)"
+                imgDamage: "assets/lagarta-rosca-dano.webp"
             },
             {
                 nome: "Lagarta-da-soja (Anticarsia gemmatalis)",
                 desc: "A mais clássica desfolhadora, tem coloração esverdeada e listras brancas. Alimenta-se vorazmente das folhas.",
                 imgBug: "assets/lagarta-da-soja.png",
-                imgDamage: "https://placehold.co/600x400/0a0f06/8bc34a?text=Dano:+Desfolha+Total\n(Folhas+Consumidas)"
+                imgDamage: "assets/dano-lagarta-soja.webp"
             },
             {
                 nome: "Falsa-medideira (Chrysodeixis includens)",
