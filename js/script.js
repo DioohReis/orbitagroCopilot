@@ -120,19 +120,19 @@ const agroDB = {
                 nome: "Falsa-medideira (Chrysodeixis includens)",
                 desc: "As lagartas movem-se curvando o corpo e consomem o limbo foliar. São de controle mais difícil e causam grandes prejuízos.",
                 imgBug: "assets/falsa-medideira.jpg",
-                imgDamage: "https://placehold.co/600x400/0a0f06/cddc39?text=Dano:+Limbo+Foliar+Consumido\n(Nervuras+Intactas)"
+                imgDamage: "assets/dano_falsamedideira.webp"
             },
             {
                 nome: "Complexo Spodoptera",
                 desc: "Atacam desde folhas até flores e vagens, apresentando resistência a algumas tecnologias Bt.",
                 imgBug: "assets/Complexo-Spodoptera.jpg",
-                imgDamage: "https://placehold.co/600x400/1a0800/ff9800?text=Dano:+Desfolha+e+Vagens+Atacadas\n(Resistente+a+Bt)"
+                imgDamage: "assets/Complexo_Spodoptera_dano.webp"
             },
             {
                 nome: "Helicoverpa (Helicoverpa armigera)",
                 desc: "Altamente polífaga e destrutiva, consome folhas, brotos, flores e perfura vagens.",
                 imgBug: "assets/Helicoverpa.jpg",
-                imgDamage: "https://placehold.co/600x400/1a0000/f44336?text=Dano:+Vagens+Perfuradas\n(Flores+e+Brotos+Consumidos)"
+                imgDamage: "assets/helicoverpa_dano.webp"
             },
             {
                 nome: "Complexo de Percevejos",
