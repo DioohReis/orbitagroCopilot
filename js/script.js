@@ -175,25 +175,25 @@ const agroDB = {
                 nome: "Cigarrinha-do-milho (Dalbulus maidis)",
                 desc: "Vetor de patógenos (molicutes e vírus). Causa enfezamentos. Plantas amareladas, nanismo, espigas chochas e falhas severas.",
                 imgBug: "assets/cigarra_milho.webp",
-                imgDamage: "https://placehold.co/600x400/1a1000/ffc107?text=Dano:+Enfezamento+do+Milho\n(Plantas+Nanicas+e+Amareladas)"
+                imgDamage: "assets/cigarra_milho.png"
             },
             {
                 nome: "Percevejo-barriga-verde (Dichelops furcatus)",
                 desc: "Ataca a base do colmo de plantas jovens, sugando seiva e injetando toxinas. Causa 'coração morto', furos transversais e manchas.",
-                imgBug: "assets/barriga-verde0.png",
-                imgDamage: "assets/barriga-verde.png"
+                imgBug: "assets/barriga-verde.png",
+                imgDamage: "assets/barriga-verde0.png"
             },
             {
                 nome: "Lagarta-elasmo (Elasmopalpus lignosellus)",
                 desc: "Destrutiva em secas. Penetra no coleto da planta, alimentando-se de tecidos. Resulta em murchamento e falhas nas linhas.",
                 imgBug: "assets/lagarta-elasmo.jpg",
-                imgDamage: "https://placehold.co/600x400/0a1400/8bc34a?text=Dano:+Falhas+nas+Linhas\n(Murcha+e+Morte+da+Plantula)"
+                imgDamage: "assets/lagarta-elasmo0.png"
             },
             {
                 nome: "Larva-alfinete (Diabrotica speciosa)",
                 desc: "Fase larval de um besouro comum. Representa grande ameaça ao sistema radicular da cultura do milho.",
-                imgBug: "https://placehold.co/600x400/0a1400/8bc34a?text=Foto:+Larva-alfinete\n(Diabrotica+speciosa)",
-                imgDamage: "https://placehold.co/600x400/1a0800/ff9800?text=Dano:+Raizes+Destruidas\n(Acamamento+e+Falhas)"
+                imgBug: "assets/larva_alfinete.webp",
+                imgDamage: "assets/larva_alfinete.png"
             }
         ]
     },
