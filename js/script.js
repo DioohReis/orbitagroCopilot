@@ -236,7 +236,7 @@ const agroDB = {
                 nome: "Cupins subterrâneos (Heterotermes tenuis)",
                 desc: "Atacam os toletes no plantio, consomem raízes e destroem a base dos colmos. Causam falhas na brotação.",
                 imgBug: "assets/cupim_sub.webp",
-                imgDamage: "cupim_sub_dano1.webp"
+                imgDamage: "assets/cupim_sub_dano1.webp"
             }
         ]
     },
@@ -273,7 +273,7 @@ const agroDB = {
                 nome: "Cigarras (Quesada gigas)",
                 desc: "Na fase de ninfa fixam-se nas raízes. Sugam a seiva continuamente, drenando a vitalidade e causando definhamento.",
                 imgBug: "assets/cigarra_1.webp",
-                imgDamage: "assets/cigarra_danp.webp"
+                imgDamage: "assets/cigarr_danp.webp"
             },
             {
                 nome: "Ácaro-vermelho (Oligonychus ilicis)",
