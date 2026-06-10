@@ -12,7 +12,7 @@ FIAP — Global Solution 2026/1 | Disciplina: Front-End Design Engineering | Tur
 
 1. [Visao Geral](#visao-geral)
 2. [Como Rodar Localmente](#como-rodar-localmente)
-   - [Pre-requisito — Extensao CORS](#pre-requisito-obrigatorio--extensao-cors)
+   - [Deploy na Vercel](#deploy-na-vercel)
 3. [Tecnologias Utilizadas](#tecnologias-utilizadas)
 4. [Arquitetura do Projeto](#arquitetura-do-projeto)
 5. [Funcionalidades por Pagina](#funcionalidades-por-pagina)
@@ -42,7 +42,7 @@ O resultado e um **laudo analitico inteligente** com nivel de risco (NOMINAL / A
 
 ## Como Rodar Localmente
 
-O projeto e **100% front-end** — sem servidor de aplicacao, sem banco de dados, sem dependencias externas que precisem de instalacao.
+O projeto e majoritariamente front-end, com uma funcao serverless em `api/sentinel.js` para proteger as credenciais do Sentinel Hub em producao.
 
 ```bash
 # 1. Clone o repositorio
@@ -51,34 +51,27 @@ git clone https://github.com/DioohReis/orbitagroCopilot.git
 # 2. Entre na pasta
 cd orbitagroCopilot
 
-# 3. Abra com Live Server (recomendado)
-#    No VS Code: instale a extensao Live Server
-#    Clique com botao direito em index.html -> Open with Live Server
+# 3. Configure as credenciais locais para usar a API Sentinel
+cp .env.example .env
+# Edite .env com SENTINEL_CLIENT_ID e SENTINEL_CLIENT_SECRET
 
-# 4. OU abra diretamente no navegador
-#    Arraste o arquivo index.html para o Chrome ou Firefox
+# 4. Rode com Vercel Dev para habilitar /api/sentinel localmente
+vercel dev
 ```
 
-**Atencao:** Para que as APIs de geolocalizacao e clima funcionem corretamente, e recomendado usar um servidor local (como o Live Server do VS Code) em vez de abrir o arquivo diretamente (`file://`), pois navegadores modernos restringem acesso a APIs de localizacao em contextos inseguros.
+**Atencao:** abrir `index.html` diretamente ainda exibe a interface, mas as imagens NDVI/NDMI dependem da rota `/api/sentinel`. Para testar a experiencia completa, use `vercel dev` ou o deploy publicado na Vercel.
 
 ---
 
-### Pre-requisito Obrigatorio — Extensao CORS
+### Deploy na Vercel
 
-As imagens NDVI e NDMI do satelite Sentinel-2 sao carregadas diretamente da API da ESA (European Space Agency). O navegador bloqueia essas requisicoes por padrao (politica de seguranca CORS — Cross-Origin Resource Sharing). **Sem a extensao, as imagens de satelite nao aparecem.**
+1. Crie o projeto na Vercel apontando para este repositorio.
+2. Cadastre as variaveis de ambiente em **Project Settings > Environment Variables**:
+   - `SENTINEL_CLIENT_ID`
+   - `SENTINEL_CLIENT_SECRET`
+3. Faca o deploy normalmente.
 
-**Solucao:** Instale a extensao gratuita **Allow CORS: Access-Control-Allow-Origin** no Google Chrome:
-
-> 🔗 [Instalar Allow CORS — Chrome Web Store](https://chromewebstore.google.com/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf?hl=pt-PT&utm_source=ext_sidebar)
-
-**Como ativar:**
-
-1. Acesse o link acima e clique em **Usar no Chrome**
-2. Apos instalada, clique no icone da extensao (canto superior direito do Chrome)
-3. Ative o toggle para habilitar
-4. Recarregue o OrbitAgro Copilot — as imagens do satelite carregarao normalmente
-
-> **Obs:** A extensao so precisa estar ativa durante o uso do site. Pode ser desativada a qualquer momento pelo mesmo icone.
+A autenticacao OAuth do Sentinel Hub roda apenas no backend serverless (`/api/sentinel`), evitando expor `client_secret` no navegador e removendo a necessidade de extensoes CORS ou proxies publicos.
 
 ---
 ## Tecnologias Utilizadas
@@ -778,7 +771,7 @@ Fluxo de dados ao iniciar o Copilot:
 Todos os dados sao exibidos nos paineis flutuantes da home e atualizados a cada selecao de cultura pelo usuario.
 
 
-> **Importante — CORS:** As requisicoes ao Sentinel Hub passam por um proxy CORS (`corsproxy.io`) pois o browser bloqueia chamadas cross-origin por padrao. Alem disso, o usuario precisa ter a extensao **Allow CORS** ativa no Chrome para que as imagens sejam exibidas. Veja a secao [Pre-requisito](#pre-requisito-obrigatorio--extensao-cors) acima.
+> **Importante — Producao:** As requisicoes ao Sentinel Hub passam pela funcao serverless `/api/sentinel`, que autentica com variaveis de ambiente da Vercel e retorna apenas a imagem PNG para o navegador. O `client_secret` nunca e enviado ao front-end.
 
 ---
 

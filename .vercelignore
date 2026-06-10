@@ -1,0 +1,12 @@
+.git
+.vercel
+.agents
+.codex
+.env
+.env.*
+!.env.example
+node_modules
+logs
+*.log
+dist
+build

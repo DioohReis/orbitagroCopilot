@@ -43,10 +43,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 descricaoDetalhe.textContent = data.descricao;
 
                 linksDetalhe.innerHTML = `
-                    <a class="social-link" href="${data.github}" target="_blank">
+                    <a class="social-link" href="${data.github}" target="_blank" rel="noopener noreferrer">
                         <span class="social-link__icon">${icones.github}</span><span>GitHub</span>
                     </a>
-                    <a class="social-link" href="${data.linkedin}" target="_blank">
+                    <a class="social-link" href="${data.linkedin}" target="_blank" rel="noopener noreferrer">
                         <span class="social-link__icon">${icones.linkedin}</span><span>LinkedIn</span>
                     </a>
                 `;

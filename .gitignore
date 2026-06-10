@@ -1,5 +1,6 @@
 # Chaves de API e Segredos
 .env
+.vercel/
 
 # Pastas de dependências e logs
 node_modules/

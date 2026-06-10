@@ -419,15 +419,7 @@ fetchWeatherTelemetrics(-23.55, -46.63);
 // 4. INTEGRAÇÃO API SATÉLITE (SENTINEL HUB)
 // ==========================================
 
-const SENTINEL_CONFIG = {
-    clientId:     'a4eb4d97-3d8e-4c7c-a571-7d44816fbc3d',
-    clientSecret: 'Bt1GEagIaKmGDR8d3yAP0RoUpWmVNflp'
-};
-
-// O endpoint /oauth/token do Sentinel Hub bloqueia CORS em browser por design (OAuth client_credentials).
-// Roteamos APENAS o pedido de token por um proxy CORS público — o /api/v1/process já aceita browser diretamente.
-const CORS_PROXY = 'https://corsproxy.io/?';
-
+// O OAuth do Sentinel Hub roda no backend serverless para manter o client_secret fora do navegador.
 /**
  * Função responsável por chamar e desenhar os Mapas NDVI e NDMI
  * via Sentinel-2 L2A (10 m de resolução)
@@ -457,97 +449,39 @@ async function buscarImagemSatelite(data) {
     hudLegendNDMI.classList.remove('visible');
 
     try {
-        // 1. Autenticação — token OAuth roteado por proxy CORS (o Process API aceita browser diretamente)
-        const tokenUrl = 'https://services.sentinel-hub.com/oauth/token';
-        const tokenResponse = await fetch(CORS_PROXY + encodeURIComponent(tokenUrl), {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-            body: `grant_type=client_credentials&client_id=${SENTINEL_CONFIG.clientId}&client_secret=${SENTINEL_CONFIG.clientSecret}`
+        // A rota /api/sentinel valida os parametros e retorna uma imagem PNG do Sentinel-2.
+        const params = new URLSearchParams({
+            lat: String(lat),
+            lon: String(lon)
         });
 
-        if (!tokenResponse.ok) throw new Error('Falha na autenticação Sentinel Hub.');
-
-        const tokenData = await tokenResponse.json();
-        if (!tokenData.access_token) throw new Error('Token inválido.');
-
-        // Janela de 3 meses (filtra nuvens) e bounding box
-        const toDate = new Date();
-        const fromDate = new Date();
-        fromDate.setMonth(toDate.getMonth() - 3);
-        const bbox = [lon - 0.03, lat - 0.03, lon + 0.03, lat + 0.03];
-
-        // 2. Mapa NDVI (Saúde Vegetativa)
-        const evalscriptNDVI = `
-            //VERSION=3
-            function setup() { return { input: ["B08", "B04", "dataMask"], output: { bands: 4 } }; }
-            function evaluatePixel(sample) {
-                let ndvi = (sample.B08 - sample.B04) / (sample.B08 + sample.B04 + 0.0001);
-                if (ndvi < 0.1) return [0.5, 0.5, 0.5, sample.dataMask];
-                if (ndvi < 0.3) return [0.65, 0.35, 0.07, sample.dataMask];
-                if (ndvi < 0.5) return [0.9, 0.9, 0.2, sample.dataMask];
-                if (ndvi < 0.7) return [0.3, 0.8, 0.3, sample.dataMask];
-                return [0.0, 0.4, 0.0, sample.dataMask];
-            }
-        `;
-
-        const sentinelBody = (evalscript) => JSON.stringify({
-            input: {
-                bounds: { bbox },
-                data: [{ type: 'sentinel-2-l2a', dataFilter: { timeRange: { from: fromDate.toISOString(), to: toDate.toISOString() }, maxCloudCoverage: 10 } }]
-            },
-            output: { width: 800, height: 450, responses: [{ identifier: 'default', format: { type: 'image/png' } }] },
-            evalscript
+        const loadSatelliteImage = (img, layer, onLoad) => new Promise((resolve, reject) => {
+            img.onload = () => {
+                onLoad();
+                resolve();
+            };
+            img.onerror = () => reject(new Error(`Falha ao carregar mapa ${layer.toUpperCase()}.`));
+            img.src = `/api/sentinel?layer=${layer}&${params.toString()}`;
         });
 
-        const authHeaders = {
-            'Authorization': `Bearer ${tokenData.access_token}`,
-            'Content-Type': 'application/json'
-        };
-
-        fetch('https://services.sentinel-hub.com/api/v1/process', {
-            method: 'POST', headers: authHeaders, body: sentinelBody(evalscriptNDVI)
-        })
-        .then(res => res.blob())
-        .then(blob => {
-            imgNDVI.src = URL.createObjectURL(blob);
-            imgNDVI.onload = () => {
+        await Promise.all([
+            loadSatelliteImage(imgNDVI, 'ndvi', () => {
                 imgNDVI.classList.add('loaded');
                 hudLegendNDVI.classList.add('visible');
                 infoSolo.innerText = data.manejo;
                 infoNdvi.innerHTML = `<strong>Análise Biológica:</strong> ${data.laudoSatelite}`;
-            };
-        });
-
-        // 3. Mapa NDMI (Umidade do Solo)
-        const evalscriptNDMI = `
-            //VERSION=3
-            function setup() { return { input: ["B08", "B11", "dataMask"], output: { bands: 4 } }; }
-            function evaluatePixel(sample) {
-                let ndmi = (sample.B08 - sample.B11) / (sample.B08 + sample.B11 + 0.0001);
-                if (ndmi < -0.2) return [0.54, 0.27, 0.07, sample.dataMask];
-                if (ndmi < 0.0)  return [0.82, 0.70, 0.54, sample.dataMask];
-                if (ndmi < 0.2)  return [1.0,  1.0,  1.0,  sample.dataMask];
-                if (ndmi < 0.4)  return [0.53, 0.80, 0.92, sample.dataMask];
-                return [0.0, 0.0, 1.0, sample.dataMask];
-            }
-        `;
-
-        fetch('https://services.sentinel-hub.com/api/v1/process', {
-            method: 'POST', headers: authHeaders, body: sentinelBody(evalscriptNDMI)
-        })
-        .then(res => res.blob())
-        .then(blob => {
-            imgNDMI.src = URL.createObjectURL(blob);
-            imgNDMI.onload = () => {
+            }),
+            loadSatelliteImage(imgNDMI, 'ndmi', () => {
                 imgNDMI.classList.add('loaded');
                 hudLegendNDMI.classList.add('visible');
                 infoLaudoNDMI.innerText = 'Identificadas faixas de absorção hídrica. Avalie zonas marrons para ajustar a pressão do pivô central de irrigação.';
-            };
-        });
+            })
+        ]);
 
     } catch (error) {
         console.error('Erro Sentinel Hub:', error);
-        infoNdvi.innerText = 'Falha na autenticação. Verifique as credenciais Sentinel Hub.';
+        infoNdvi.innerText = 'Falha ao carregar imagens orbitais. Verifique as variáveis de ambiente Sentinel Hub na Vercel.';
+        infoLaudoNDMI.innerText = 'Mapa hídrico indisponível no momento.';
     }
 }
 
