@@ -12,7 +12,6 @@ FIAP — Global Solution 2026/1 | Disciplina: Front-End Design Engineering | Tur
 
 1. [Visao Geral](#visao-geral)
 2. [Como Rodar Localmente](#como-rodar-localmente)
-   - [Deploy na Vercel](#deploy-na-vercel)
 3. [Tecnologias Utilizadas](#tecnologias-utilizadas)
 4. [Arquitetura do Projeto](#arquitetura-do-projeto)
 5. [Funcionalidades por Pagina](#funcionalidades-por-pagina)
@@ -63,17 +62,6 @@ vercel dev
 
 ---
 
-### Deploy na Vercel
-
-1. Crie o projeto na Vercel apontando para este repositorio.
-2. Cadastre as variaveis de ambiente em **Project Settings > Environment Variables**:
-   - `SENTINEL_CLIENT_ID`
-   - `SENTINEL_CLIENT_SECRET`
-3. Faca o deploy normalmente.
-
-A autenticacao OAuth do Sentinel Hub roda apenas no backend serverless (`/api/sentinel`), evitando expor `client_secret` no navegador e removendo a necessidade de extensoes CORS ou proxies publicos.
-
----
 ## Tecnologias Utilizadas
 
 ### HTML5 — A Estrutura Semantica
